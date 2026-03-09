@@ -11,7 +11,7 @@ pipeline {
 
         stage('Convert Notebook') {
             steps {
-                bat 'jupyter nbconvert --to script train_model.ipynb'
+                bat '"C:\\Users\\staff\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m nbconvert --to script train_model.ipynb'
             }
         }
 
